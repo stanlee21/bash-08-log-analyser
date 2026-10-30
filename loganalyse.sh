@@ -50,6 +50,9 @@ top_ips=$(awk '{print $1}' "$logfile" | sort | uniq -c | sort -rn | head -5)
 top_404=$(awk '$9 == 404 {print $7}' "$logfile" | sort | uniq -c | sort -rn | head -5)
 
 
+# Calculate total data sent in MB
+data_sent=$(awk '{total += $10} END {printf "%.1f", total / 1048576}' "$logfile")
+
 
 #Display the report
 
@@ -64,6 +67,8 @@ echo "2xx responses: $count_2xx"
 echo "3xx responses: $count_3xx"
 echo "4xx responses: $count_4xx"
 echo "5xx responses: $count_5xx"
+
+echo "Data sent: $data_sent MB"
 
 echo
 echo "Top 5 pages"
