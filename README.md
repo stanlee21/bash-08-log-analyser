@@ -41,7 +41,7 @@ This project provides a Bash script that analyses server access logs and generat
 
 ### Program Output
 <!-- Add a screenshot of your terminal output here -->
-![alt text](<assets/img/Screenshot From 2026-10-30 14-25-32.png>)
+![alt text](<assets/img/Screenshot From 2026-10-30 15-40-52.png>)
 
 ## Installation and Setup
 
@@ -87,11 +87,11 @@ Example generated using a 20-line test log:
 ==========================================
 Log report: small.log
 ==========================================
-Total requests ........ 20
-Unique visitors ....... 5
-2xx / 3xx ............. 11 / 3
-4xx / 5xx ............. 3 / 3
-Data sent ............. 0.0 MB
+Total requests ........ 5000
+Unique visitors ....... 10
+2xx / 3xx ............. 3932 / 177
+4xx / 5xx ............. 794 / 97
+Data sent ............. 33.9 MB
 
 Top 5 pages
       4 /index.html
@@ -101,14 +101,18 @@ Top 5 pages
       3 /css/style.css
 
 Top 5 IP addresses
-      4 192.168.1.14
-      4 192.168.1.13
-      4 192.168.1.12
-      4 192.168.1.11
-      4 192.168.1.10
+      513 154.73.4.200
+        512 41.202.219.70
+        508 41.211.10.8
+        505 102.244.1.9
+        500 154.72.160.3
 
 Top 5 broken links (404)
-      3 /images/logo.png
+    351 /blog/bash-tips
+    312 /old-page
+     27 /index.html
+     26 /css/style.css
+     15 /curriculum.pdf
 ```
 
 ## What I Learned
