@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Server access logs contain useful information about website traffic, errors, and performance. However, analysing thousands of raw log entries manually is time-consuming.
+Server access logs contain useful information about site traffic, errors, and performance. However, analysing thousands of raw log entries manually is time-consuming.
 
 This project provides a Bash script that analyses server access logs and generates a readable report.
 
